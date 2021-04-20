@@ -114,12 +114,98 @@ img{
 
 .tp-Topics{
   margin-top: 6.364301389904901%;
+  background-color: #f7f6f2;
 }
 
 .tp-Heading{
   position: relative; /* これで自身が基準となる */
-  top: -28px;
+  top: -40px;
+  margin-bottom: 55px;
 }
+
+.tp-HeadingMain{
+  font-family: 'Raleway', sans-serif; /* Ralewayを使うために、htmlでgoogle web fontsを呼び出している */
+  text-align: center;
+  display: block;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.tp-HeadingMain::after{ /* 下線 */
+  content: "";
+  display: block;
+  background-color: #b4b4b4;
+  width:80px;
+  height: 1px;
+  position: absolute;
+  top: 80px;
+  left: 47%;
+}
+
+.tp-HeadingSub{
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.tp-TopicsInner{
+  width: 100%;
+  padding: 0 0 110px;
+}
+
+.tp-Declaration{
+  width: 100%;
+  background-color: #f7f6f2;
+  padding-bottom: 20px;
+}
+
+.tp-DeclarationInner{
+  width: 510px;
+  max-width: 510px;
+  background-color: #193b3c;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tp-DeclarationTextArea{
+  text-align: center;
+  width: 500px;
+  border: 1px solid #fff;
+}
+
+.tp-DeclarationLink{
+  color: #fff;
+}
+
+.emergency-message1{
+  padding-top: 15px;
+  font-size: 22px;
+  line-height: 1.0; /* 行間の指定 */
+}
+
+.emergency-message2{
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.tp-Emergency{
+  background-color: #f7f6f2;
+}
+
+.tp-EmergencyInner{
+  width: 510px;
+  max-width: 510px;
+  margin: auto;
+  padding-bottom: 25px;
+  background-color: #f7f6f2;
+}
+
 /* 見出し */
 .page-title{
   font-size: 4rem;
