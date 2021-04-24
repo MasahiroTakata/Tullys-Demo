@@ -192,6 +192,7 @@ img{
 .emergency-message2{
   padding-bottom: 15px;
   font-size: 14px;
+  line-height: 2.0;
 }
 
 .tp-Emergency{
@@ -202,10 +203,107 @@ img{
   width: 510px;
   max-width: 510px;
   margin: auto;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
   background-color: #f7f6f2;
 }
 
+.tp-Service{
+  padding-top: 50px;
+}
+
+.ser-Heading{
+  position: relative; /* これで自身が基準となる */
+  margin-bottom: 55px;
+}
+
+.tp-ServiceInner{
+  max-width: 1120px;
+  margin: auto;
+}
+
+.tp-ServiceList{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 83%;
+  margin: auto;
+}
+
+.tp-ServiceListSubHead{
+  font-size: 16px;
+  position: relative; /* 要素が基準となる */
+}
+
+.tp-ServiceListSubHead::after{
+  content: "->";
+  width: 20px;
+  height: 10px;
+  position: absolute; /* relativeを持つ親要素を基準として指定する */
+  right: 0;
+}
+.tp-ServiceDetail{
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.tp-ServiceListEl{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  border-left: 1px dotted #000;
+  width: 33%;
+}
+
+.tp-ServiceListEl:nth-child(3n){ /* １列目右端のラインを作成 */
+  border-right: 1px dotted #000;
+}
+
+.tp-ServiceListEl:last-child{ /* ２列目右端のラインを作成 */
+  border-right: 1px dotted #000;
+}
+
+.tp-ServiceListEl a{
+  color: #432;
+}
+
+.tp-ServiceListHead{
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+.tp-ServiceListImg{
+  width: 40%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.ser-HeadingMain{
+  font-family: 'Raleway', sans-serif; /* Ralewayを使うために、htmlでgoogle web fontsを呼び出している */
+  text-align: center;
+  display: block;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.ser-HeadingMain::after{ /* 下線 */
+  content: "";
+  display: block;
+  background-color: #b4b4b4;
+  width:80px;
+  height: 1px;
+  position: absolute;
+  top: 80px;
+  left: 47%;
+}
+
+.ser-HeadingSub{
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  font-weight: 100;
+}
 /* 見出し */
 .page-title{
   font-size: 4rem;
