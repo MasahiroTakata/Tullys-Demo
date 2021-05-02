@@ -569,6 +569,83 @@ img{
   height: 10px;
   position: absolute; /* relativeを持つ親要素を基準として指定する */
 }
+
+.tp-Partner{
+  background-color: #f7f6f2;
+}
+
+.tp-PartnerInner{
+  width: 82%;
+  margin: auto;
+  position: relative;
+}
+
+.tp-PartnerHead{
+  position: absolute;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.tp-PartnerLead{
+  width: 20%;
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.tp-PartnerLink{
+  width: 49%;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  position: relative;
+  overflow: hidden; /* 子要素から、はみ出た画像などをはみ出さないように出来る */
+  padding: 2% 1.785714285714286% 2% 21.428571428571427%;
+}
+
+.tp-PartnerLink::after{
+  width: 37%;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tp-PartnerLink-recruit::after{
+  background-image: url("https://www.tullys.co.jp/assets/images/common/partner_recruit.png");
+}
+
+.tp-PartnerLinkWrap{
+  justify-content: space-between;
+  display: flex;
+  padding-top: 5.1%;
+  padding-bottom: 5.1%;
+}
+
+.tp-PartnerLinkInner{
+  background-image: url("https://www.tullys.co.jp/assets/images/common/icon_arrow.png");
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.tp-PartnerLinkLabel{
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin-bottom: 3.6%;
+}
+
+.tp-PartnerLinkSub{
+  display: block;
+  font-size: 14px;
+  color: #535353;
+}
 /* 見出し */
 .page-title{
   font-size: 4rem;
