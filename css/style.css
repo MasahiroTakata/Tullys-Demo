@@ -36,8 +36,8 @@ img{
   padding: 0 0; /* スマートフォン向けの余白設定 */
 }
 
-.logo{
-  width: 71px;
+.cm-HeaderLogo{
+  width: 85px;
   margin-top: 14px;
 }
 
@@ -61,7 +61,6 @@ img{
 
 .headerNavLang{
   margin-left: auto;
-  height: 130px;
   width: 120px;
   border-left: 1px solid #d4d4d4;
 }
@@ -81,7 +80,6 @@ img{
 
 .headerNavSub{
   width: 120px;
-  height: 130px;
   border-left: 1px solid #d4d4d4;
 }
 
@@ -719,48 +717,7 @@ img{
   font-size: 10px;
   padding-bottom: 30px;
 }
-/* 見出し */
-.page-title{
-  font-size: 4rem;
-  font-family: 'Philosopher', serif;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-/* ボタン */
-.button{
-  font-size: 1.375rem;
-  background: #0bd;
-  color: #fff;
-  border-radius: 5px;
-  padding: 18px 32px;
-}
 
-.button:hover{
-  background: #0090aa;
-}
-
-/* 背景画像 */
-.big-bg{
-  background-size: cover; /* 画像の縦横比を保ったまま、画面いっぱいに広げたい場合の設定 */
-  background-position: center top;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-#home{
-  background-image: url('../images/main-bg.jpg');
-  /*
-  background-color: #0bd;
-  background-blend-mode: hard-light; /* ブレンドモード、ハードライトの指定 */
-
-  min-height: 100vh;
-}
-
-#home .page-title{
-  text-transform: none;
-}
-
-/* footer */
 footer{
   background-color: #432;
   text-align: center;
@@ -770,81 +727,60 @@ footer p{
   color: #fff;
   font-size: 0.875rem;
 }
-/*
-  共通部分終わり
-*/
 
-/* モバイル版（メディアクエリーと呼ばれる） */
-@media (max-width: 600px){ /* 600px以下になると設定が適用される */
+/* iPad版（メディアクエリーと呼ばれる） */
+@media (max-width: 1070px) and (min-width: 768px){ /* 1070px以下になると設定が適用される */
+  .main_nav li{
+    margin: 0 0 0 10px;
+  }
+
+  .main_nav a{
+    color: #432;
+    font-size: 11px;
+  }
+
   .page-title{
     font-size: 2.5rem;
-  }
-  /* header */
-  .main_nav{
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-
-  .main_nav li{
-    margin: 0 20px;
   }
 
   .home-content{
     margin-top: 20%;
   }
+}
 
-  .page-header{
-    flex-direction: column; /* これで縦並びに設定できる */
-    align-items: center; /* 中央揃え */
-  }
-  /* 
-    newsページ 
-  */
-  .news-contents{
-    flex-direction: column; /* 縦並びの設定 */
+/* スマホ版 */
+@media (max-width: 767px){  
+  .pcOnly{
+    display: none;
   }
 
-  article, aside{
-    width: 100%;
+  .cm-HeaderLogo{
+    width: 15.4%;
   }
 
-  #news .page-title{
-    margin-top: 30px;
+  .main_nav a{
+    color: #432;
+    font-size: 3.2vw;
   }
 
-  aside{
-    margin-top: 60px;
+  .cm-HeaderNavBtn{
+    margin: 8% 5.333333333333334vw 0 auto;
   }
 
-  .post-info{
-    margin-bottom: 30px;
+  .cm-HeaderNavBtnEl{
+    width: 6.666666666666667vw;
+    height: 0.533333333333333vw;
+    margin-bottom: 1.866666666666667vw;
+    background: #301d0f;
+    display: block;
   }
 
-  .post-date{
-    width: 70px;
-    height: 70px;
-    font-size: 1rem;
+  .main_nav li{
+    margin-left: 5.333333333333334vw;
+    padding-top: 15%;
   }
 
-  .post-date span{
-    font-size: 0.875rem;
-    padding-top: 2px;
-  }
-
-  .post-title{
-    font-size: 1.375rem;
-  }
-
-  .post-cat{
-    font-size: 0.875rem;
-    margin-top: 10px;
-  }
-
-  .post-title, .post-cat{
-    margin-left: 80px;
-  }
-
-  .ad{
-    display: none; /* 要素自体を隠せる（非表示の箇所が埋まる） */
+  .cm-HeaderNavListEl:nth-child(4), .cm-HeaderNavListEl:nth-child(5), .cm-HeaderNavListEl:nth-child(6){
+    display: none;
   }
 }
