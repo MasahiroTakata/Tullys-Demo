@@ -162,7 +162,6 @@ img{
 
 .tp-DeclarationInner{
   width: 510px;
-  max-width: 510px;
   background-color: #193b3c;
   margin: auto;
   padding-top: 5px;
@@ -199,7 +198,6 @@ img{
 
 .tp-EmergencyInner{
   width: 510px;
-  max-width: 510px;
   margin: auto;
   padding-bottom: 50px;
   background-color: #f7f6f2;
@@ -782,5 +780,68 @@ footer p{
 
   .cm-HeaderNavListEl:nth-child(4), .cm-HeaderNavListEl:nth-child(5), .cm-HeaderNavListEl:nth-child(6){
     display: none;
+  }
+
+  .tp-Topics{
+    margin-top: 0%;
+  }
+
+  .tp-Heading{
+    top: 0px;
+    padding-top: 12vw;
+  }
+
+  .tp-HeadingMain{
+    font-family: 'Raleway', sans-serif; /* Ralewayを使うために、htmlでgoogle web fontsを呼び出している */
+    text-align: center;
+    display: block;
+    font-size: 9.6vw;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  
+  .tp-HeadingMain::after{ /* 下線 */
+    content: "";
+    display: block;
+    background-color: #b4b4b4;
+    width:12.2vw;
+    height: 1px;
+    position: absolute;
+    top: 27vw;
+    left: 45%;
+  }
+  
+  .tp-HeadingSub {
+    font-size: 3.733333333333334vw;
+  }
+
+  .tp-DeclarationInner{
+    width: 82vw;
+    background-color: #193b3c;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .tp-DeclarationTextArea{
+    text-align: center;
+    width: 80.5vw;
+    border: 1px solid #fff;
+  }
+
+  .tp-EmergencyInner{
+    width: 82vw;
+    margin: auto;
+    padding-bottom: 50px;
+    background-color: #f7f6f2;
+  }
+
+  .emergency-message1{
+    padding-top: 15px;
+    font-size: 4vw;
+    line-height: 1.0; /* 行間の指定 */
   }
 }
