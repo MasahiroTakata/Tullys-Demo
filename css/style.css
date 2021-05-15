@@ -216,6 +216,7 @@ img{
 .tp-ServiceInner{
   max-width: 1120px;
   margin: auto;
+  width: 81.93vw;
 }
 
 .tp-ServiceList{
@@ -229,38 +230,78 @@ img{
 .tp-ServiceListSubHead{
   font-size: 16px;
   position: relative; /* 要素が基準となる */
+  padding-right: 30px;
 }
 
-.tp-ServiceListSubHead::after{
-  content: "->";
-  width: 20px;
-  height: 10px;
-  position: absolute; /* relativeを持つ親要素を基準として指定する */
-  right: 0;
-}
 .tp-ServiceDetail{
   font-size: 13px;
   margin-top: 15px;
 }
 
-.tp-ServiceListEl{
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 40px;
-  border-left: 1px dotted #000;
-  width: 33%;
-}
+@media (min-width: 768px){  
+  .tp-ServiceListEl{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+    border-left: 1px dotted #000;
+    width: 33%;
+  }
+  
+  .tp-ServiceListEl:nth-child(3n){ /* １列目右端のラインを作成 */
+    border-right: 1px dotted #000;
+  }
+  
+  .tp-ServiceListEl:last-child{ /* ２列目右端のラインを作成 */
+    border-right: 1px dotted #000;
+  }
 
-.tp-ServiceListEl:nth-child(3n){ /* １列目右端のラインを作成 */
-  border-right: 1px dotted #000;
-}
+  .tp-ServiceListEl a{
+    color: #432;
+  }
 
-.tp-ServiceListEl:last-child{ /* ２列目右端のラインを作成 */
-  border-right: 1px dotted #000;
-}
+  .tp-ServiceListHead{
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  
+  .tp-ServiceListImg{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 
-.tp-ServiceListEl a{
-  color: #432;
+  .tp-ServiceListSubHead::after{
+    content: "->";
+    width: 20px;
+    height: 10px;
+    position: absolute; /* relativeを持つ親要素を基準として指定する */
+    right: 0;
+  }
+
+  .tp-ServiceLink{
+    width: 170px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 45px;
+    margin: 5.357142857142857% auto 0;
+    border: 2px solid #d6d2cf;
+    border-radius: 100px;
+    color: #432;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 47%;
+  }
+
+  .tp-ServiceBtnText{
+    position: relative; /* 要素が基準となる */
+  } 
+  .tp-ServiceBtnText::after{
+    content: "->";
+    width: 20px;
+    height: 10px;
+    margin-left: 10px;
+    position: absolute; /* relativeを持つ親要素を基準として指定する */
+  }
 }
 
 .tp-ServiceListHead{
@@ -271,33 +312,8 @@ img{
 .tp-ServiceListImg{
   width: 40%;
   margin: auto;
-  margin-bottom: 20px;
 }
 
-.tp-ServiceLink{
-  width: 170px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 45px;
-  margin-left: 45%;
-  border: 2px solid #d6d2cf;
-  border-radius: 100px;
-  color: #432;
-  font-family: 'Raleway', sans-serif;
-}
-
-.tp-ServiceBtnText{
-  position: relative; /* 要素が基準となる */
-}
-
-.tp-ServiceBtnText::after{
-  content: "->";
-  width: 20px;
-  height: 10px;
-  margin-left: 10px;
-  position: absolute; /* relativeを持つ親要素を基準として指定する */
-}
 .ser-HeadingMain{
   font-family: 'Raleway', sans-serif; /* Ralewayを使うために、htmlでgoogle web fontsを呼び出している */
   text-align: center;
@@ -312,7 +328,7 @@ img{
   content: "";
   display: block;
   background-color: #b4b4b4;
-  width:80px;
+  width: 7vw;
   height: 1px;
   position: absolute;
   top: 80px;
@@ -326,6 +342,9 @@ img{
   font-weight: 100;
 }
 
+.spOnly{
+  display: none;
+}
 .tp-Fyt{
   width: 100%;
   background-color: #f7f6f2;
@@ -383,22 +402,6 @@ img{
 }
 .tp-FytListEl:nth-child(2n){ /* １列目右端のラインを作成 */
   margin-left: 30px;
-}
-
-.tp-FytInnerLink{
-  width: 150px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 45px;
-  margin-top: 5%;
-  right: 0;
-  border: 2px solid #d6d2cf;
-  border-radius: 100px;
-  color: #432;
-  font-family: 'Raleway', sans-serif;
-  position: absolute;
-  background-color: #fff;
 }
 
 .tp-FytInnerLink::after{
@@ -828,7 +831,7 @@ footer p{
   
   .tp-DeclarationTextArea{
     text-align: center;
-    width: 80.5vw;
+    width: 80.1vw;
     border: 1px solid #fff;
   }
 
@@ -843,5 +846,99 @@ footer p{
     padding-top: 15px;
     font-size: 4vw;
     line-height: 1.0; /* 行間の指定 */
+  }
+
+  .ser-HeadingSub{
+    font-size: 3.73vw;
+  }
+
+  .tp-ServiceListEl{
+    width: 89.3vw;
+    margin: 0 auto 10.666666666666668vw;
+  }
+
+  .tp-ServiceListHead{
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .tp-ServiceListHead img{
+    width: 33%;
+  }
+
+  .tp-ServiceListHead::after{
+    content: "";
+    flex-grow: 1;
+    border-top: 1px dotted #301d0f;
+    margin-left: 1.3vw;
+  }
+
+  .tp-ServiceListEl a{
+    color: #432;
+  }
+
+  .spOnly{
+    display: block;
+  }
+
+  .tp-ServiceListInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 縦が中央揃えになる */
+  }
+
+  .tp-ServiceListImg{
+    padding-top: 1.3vw;
+    padding-right: 3.7vw;
+    padding-left: 3.7vw;
+    padding-bottom: 0px; 
+  }
+
+  .tp-ServiceListDetail{
+    width: 53.86vw;
+  }
+
+  .tp-ServiceBtnText{
+    position: relative; /* 要素が基準となる */
+    
+  }  
+
+  .tp-ServiceListSubHead{
+    font-size: 4.266666666666667vw;
+    line-height: 1.4em; /* 行間の幅 */
+    padding-right: 5.333333333333334vw;
+  }
+
+  .tp-ServiceListSubHead::after{
+    content: "->";
+    height: 10px;
+    position: absolute; /* relativeを持つ親要素を基準として指定する */
+    right: 0;
+  }
+
+  .tp-ServiceDetail{
+    font-size: 3.2vw;
+  }
+
+  .tp-ServiceLink{
+    padding: 2.133333333333333vw;
+    padding-left: 9.866666666666667vw;
+    padding-right: 6vw;
+    width: 43.733333333333334vw;
+    margin: 10.666666666666668vw auto 0;
+    font-size: 4.8vw;
+    border: 2px solid #d6d2cf;
+    border-radius: 100px;
+    color: #432;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 23%;
+  }
+
+  .tp-ServiceBtnText::after{
+    content: "->";
+    width: 20px;
+    height: 10px;
+    margin-left: 14px;
   }
 }
