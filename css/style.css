@@ -529,7 +529,7 @@ img{
 
 .tp-GotoNews{
   margin-top: 40px;
-  width: 95%;
+  width: 100%;
 }
 
 .tp-NewsSub{
@@ -574,6 +574,7 @@ img{
 .tp-NewsSubMoreLink{
   color:#301d0f;
   position: relative;
+  font-family: 'Raleway', sans-serif;
 }
 
 .tp-NewsSubMoreLink::after{
@@ -805,7 +806,6 @@ footer p{
 
   .tp-Heading{
     top: 0px;
-    padding-top: 12vw;
   }
 
   .tp-HeadingMain{
@@ -915,8 +915,7 @@ footer p{
 
   .tp-ServiceBtnText{
     position: relative; /* 要素が基準となる */
-    
-  }  
+  } 
 
   .tp-ServiceListSubHead{
     font-size: 4.266666666666667vw;
@@ -1002,5 +1001,71 @@ footer p{
 
   .tp-FytInnerLink::after {
     width: 40px;
+  }
+
+  .tp-News{
+    padding: 13.333333333333334vw 0 17.333333333333336vw;
+  }
+
+  .tp-HeadingMain{
+    font-size: 9.6vw;
+  }
+
+  .tp-HeadingMain::after{
+    top: 16vw;
+  }
+
+  .tp-HeadingSub{
+    font-size: 3.733333333333334vw;
+  }
+
+  .tp-NewsInner{
+    display: block;
+    width: 89.3vw;
+  }
+
+  .tp-NewsMain{
+    width: 100%;
+  }
+
+  .tp-NewsMainList{
+    width: 100%;
+  }
+
+  .tp-NewsSub{
+    width: 100%;
+    margin-top: 10vw;
+  }
+
+  .tp-NewsMainDate{
+    font-size: 4.8vw;
+  }
+
+  .tp-NewsMainTitle{
+    font-size: 4.8vw;
+  }
+
+  .tp-NewsSubHead{
+    font-size: 4.8vw;
+  }
+
+  .tp-NewsSubItem{
+    font-size: 4.8vw;
+  }
+
+  .tp-NewsSubMore{
+    font-size: 4.8vw;
+    padding-right: 6vw;
+  }
+
+  .tp-NewsSubMoreLink{
+    padding-bottom: 1.3vw;
+    padding-left: 1.9vw;
+    padding-right: 7.5vw;
+    border-bottom: solid 2px #d6d2cf;
+  }
+
+  .tp-NewsSubMoreLink::after{
+    width: 7vw;
   }
 }
