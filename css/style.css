@@ -294,13 +294,21 @@ img{
 
   .tp-ServiceBtnText{
     position: relative; /* 要素が基準となる */
-  } 
+  }
+
   .tp-ServiceBtnText::after{
     content: "->";
     width: 20px;
     height: 10px;
     margin-left: 10px;
     position: absolute; /* relativeを持つ親要素を基準として指定する */
+  }
+
+  .tp-PartnerLead{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
   }
 }
 
@@ -589,7 +597,7 @@ img{
 }
 
 .tp-PartnerInner{
-  width: 82%;
+  width: 89.3%;
   margin: auto;
   position: relative;
 }
@@ -599,13 +607,6 @@ img{
   font-size: 24px;
   top: 0;
   left: 0;
-  transform: translateY(-50%);
-}
-
-.tp-PartnerLead{
-  width: 20%;
-  position: absolute;
-  right: 0;
   transform: translateY(-50%);
 }
 
@@ -1067,5 +1068,32 @@ footer p{
 
   .tp-NewsSubMoreLink::after{
     width: 7vw;
+  }
+
+  .tp-PartnerInner{
+    padding-top: 6.6vw;
+  }
+  .tp-PartnerLinkWrap{
+    display: block;
+  }
+
+  .tp-PartnerLead{
+    width: 62.4vw;
+    top: 4vw;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .tp-PartnerHead{
+    font-size: 4vw;
+  }
+
+  .tp-PartnerLink{
+    display: block;
+    width: 100%;
+    padding-left: 38vw;
+    padding-right: 3vw;
+    margin-bottom: 5vw;
   }
 }
