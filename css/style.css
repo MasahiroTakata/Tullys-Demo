@@ -97,17 +97,15 @@ img{
 }
 
 .topVisual{
+  max-width: 1366px;
+  margin: auto;
+}
+
+.topImg{
   background-size: cover; /* 画像の縦横比を保ったまま、画面いっぱいに広げたい場合の設定 */
   background-position: center top;
   background-repeat: no-repeat;
   position: relative;
-}
-
-#topImg{
-  background-image: url('../images/ae26e88550b587545778b941fd256d371df62a5d.jpg');
-  min-height: 70vh;
-  max-width: 1366px;
-  margin: auto;
 }
 
 .tp-Topics{
