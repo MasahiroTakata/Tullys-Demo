@@ -96,9 +96,14 @@ img{
   margin: 40px 0 0 20px;
 }
 
-.topVisual{
+.topVisual_pc{
   max-width: 1366px;
   margin: auto;
+  margin-bottom: -2vw;
+}
+
+.topVisual_sp{
+  display: none;
 }
 
 .topImg{
@@ -236,7 +241,7 @@ img{
   margin-top: 15px;
 }
 
-@media (min-width: 768px){  
+@media (min-width: 768px){
   .tp-ServiceListEl{
     padding-left: 20px;
     padding-right: 20px;
@@ -778,6 +783,17 @@ footer p{
     font-size: 3.2vw;
   }
 
+  .topVisual_sp{
+    max-width: 1366px;
+    margin: auto;
+    display: block;
+    margin-bottom: -2vw;
+  }
+
+  .topVisual_pc{
+    display: none;
+  }
+
   .cm-HeaderNavBtn{
     margin: 8% 5.333333333333334vw 0 auto;
   }
@@ -804,7 +820,7 @@ footer p{
   }
 
   .tp-Heading{
-    top: 0px;
+    top: 5vw;
   }
 
   .tp-HeadingMain{
