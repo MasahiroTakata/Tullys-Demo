@@ -21,6 +21,15 @@ img{
   width: 100%;
 }
 
+/* 画像スライダー用 */
+.slider {
+  margin: 0 auto 50px;
+}
+
+.slider img {
+  width: 100%;
+}
+
 .page-header{
   display: flex;
   font-size: 13px;

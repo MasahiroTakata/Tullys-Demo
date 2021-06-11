@@ -1,6 +1,6 @@
 window.onload = function (){
   var timer1 = null;
-
+  // メインビジュアル（画像を6秒おきに切り替える）
   function chengeImage(){
     let image;
 
