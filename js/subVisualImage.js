@@ -2,7 +2,9 @@
 // 使用するのは、Variable WidthとCenter Modeの応用
 $(document).ready(function () {
   $('.slider').slick({
-    autoplay: true,
+    dots: true,
+    centerMode: true,
+    variableWidth: true
   });
   // // まずは「Variable Width」で作成する
   // $('.variable-width').slick({

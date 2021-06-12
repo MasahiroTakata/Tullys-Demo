@@ -23,11 +23,13 @@ img{
 
 /* 画像スライダー用 */
 .slider {
-  margin: 0 auto 50px;
+  margin: 0 auto;
+  width: 70vw;
 }
 
-.slider img {
-  width: 100%;
+.slick-prev::before,
+.slick-next::before {
+  color: black!important;
 }
 
 .page-header{
@@ -162,8 +164,7 @@ img{
 }
 
 .tp-TopicsInner{
-  width: 100%;
-  padding: 0 0 110px;
+  padding-bottom: 6vw;
 }
 
 .tp-Declaration{
@@ -465,7 +466,6 @@ img{
 
 .tp-Heading{
   position: relative; /* これで自身が基準となる */
-  margin-bottom: 25px;
 }
 
 .tp-HeadingMain{
