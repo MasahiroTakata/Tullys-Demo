@@ -77,29 +77,98 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev
-{
-    left: -25px;
+
+@media (min-width: 768px){ 
+    .slick-prev
+    {
+        background: url('https://www.tullys.co.jp/assets/images/index/icon_prev.png');
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        left: -1vw;
+        top: 130px;
+        left: -25px;
+        z-index: 1;
+    }
+    .slick-next
+    {
+        background: url('https://www.tullys.co.jp/assets/images/index/icon_next.png');
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        right: -1vw;
+        top: 130px;
+        right: -25px;
+        z-index: 1;
+    }
+    .slick-dotted.slick-slider
+    {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    /* .slick-prev:before, .slick-next:before {
+        color: #000;
+    }
+
+    .slick-prev:before{
+        content: "←";
+    }
+
+    .slick-next:before{
+        content: "→";
+    } */
 }
+
+@media (max-width: 767px){
+    .slick-prev
+    {
+        background: url('https://www.tullys.co.jp/assets/images/index/icon_prev.png');
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        left: -3vw;
+        top: 20vw;
+        z-index: 1;
+    }
+    .slick-next
+    {
+        background: url('https://www.tullys.co.jp/assets/images/index/icon_next.png');
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        right: -3vw;
+        top: 20vw;
+        z-index: 1;
+    }
+    .slick-dotted.slick-slider
+    {
+        margin-bottom: 30px;
+        width: 80vw;
+        margin: auto;
+    }
+}
+
 [dir='rtl'] .slick-prev
 {
     right: -25px;
     left: auto;
 }
-.slick-prev:before
+/* .slick-prev:before
 {
     content: '←';
-}
-[dir='rtl'] .slick-prev:before
+    background: url('https://www.tullys.co.jp/assets/images/index/icon_prev.png');
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+} */
+
+/* [dir='rtl'] .slick-prev:before
 {
     content: '→';
-}
+} */
 
-.slick-next
-{
-    right: -25px;
-}
-[dir='rtl'] .slick-next
+/* [dir='rtl'] .slick-next
 {
     right: auto;
     left: -25px;
@@ -111,14 +180,9 @@
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+} */
 
 /* Dots */
-.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
-
 .slick-dots
 {
     position: absolute;

@@ -1,18 +1,9 @@
-// https://uteee.com/system/3750/
-// 使用するのは、Variable WidthとCenter Modeの応用
 $(document).ready(function () {
-  $('.slider').slick({
+  $('.full-screen-o').slick({
     dots: true,
     centerMode: true,
-    variableWidth: true
+    variableWidth: true,
+    slidesToShow: 3, // 表示するスライド数を設定
+    slidesToScroll: 3, // スクロールするスライド数を設定
   });
-  // // まずは「Variable Width」で作成する
-  // $('.variable-width').slick({
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 300,
-  //   slidesToShow: 1,
-  //   centerMode: true,
-  //   variableWidth: true
-  // });
 });

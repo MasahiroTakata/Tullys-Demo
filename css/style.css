@@ -21,21 +21,15 @@ img{
   width: 100%;
 }
 
-/* 画像スライダー用 */
-.slider {
-  margin: 0 auto;
-  width: 70vw;
-}
-
-.slick-prev::before,
-.slick-next::before {
-  color: black!important;
-}
-
 .page-header{
   display: flex;
   font-size: 13px;
   border-bottom: 1px solid #d4d4d4;
+}
+
+.sliderImg{
+  border-radius: 10px;
+  box-shadow: 1px 8px 15px rgb(6 0 1 / 25%);
 }
 
 .page-header h1{
@@ -163,10 +157,13 @@ img{
   font-weight: 100;
 }
 
-.tp-TopicsInner{
+/* .tp-TopicsInner{
+  padding-bottom: 6vw;
+} */
+
+.sliderArea{
   padding-bottom: 6vw;
 }
-
 .tp-Declaration{
   width: 100%;
   background-color: #f7f6f2;
@@ -281,6 +278,11 @@ img{
     width: 40%;
     margin: auto;
     margin-bottom: 20px;
+  }
+
+  /* 画像スライダー用 */
+  .slider {
+    margin: 0 auto;
   }
 
   .tp-ServiceListSubHead::after{
@@ -813,6 +815,12 @@ footer p{
     margin-bottom: 1.866666666666667vw;
     background: #301d0f;
     display: block;
+  }
+
+  /* 画像スライダー用 */
+  .slider {
+    margin: 0 auto;
+    width: 80vw;
   }
 
   .main_nav li{
