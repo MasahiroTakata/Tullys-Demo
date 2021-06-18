@@ -48,7 +48,7 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    /* background: transparent; これがマウスホバー時にボタンを消していた */
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -81,7 +81,7 @@
 @media (min-width: 768px){ 
     .slick-prev
     {
-        background: url('https://www.tullys.co.jp/assets/images/index/icon_prev.png');
+        background: url('https://www.tullys.co.jp/assets/images/index/icon_prev.png') no-repeat;
         width: 60px;
         height: 60px;
         background-size: contain;
@@ -89,10 +89,11 @@
         top: 130px;
         left: -25px;
         z-index: 1;
+        opacity: 1;
     }
     .slick-next
     {
-        background: url('https://www.tullys.co.jp/assets/images/index/icon_next.png');
+        background: url('https://www.tullys.co.jp/assets/images/index/icon_next.png') no-repeat;
         width: 60px;
         height: 60px;
         background-size: contain;
